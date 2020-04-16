@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title> Lista dei Canti </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+  	<link rel="stylesheet" type="text/css" href="HomeStyle.css"/>
+  </head>
+  <body>
+    <div id="Titolo_e_Menu" class="Redground Titolo_e_Menu">
+      <b> <span style="margin-left: 35%"> La Divina Commedia </span>
+      <img src="res/Utente.png" id="LoginButton" class="LoginButton" name="LoginButton" align="right" title="Login"/>
+      </b>
+    </div>
+    <div id="Login_Container" class="container">
+      <div id="LoginDiv" class="LoginDiv0">
+        <div id="LoginContent">
+        </div>
+      </div>
+    </div>
+    <div id="ListaCanti" class="CantiList">
+      <div id="Inferno">
+        <div id="I_Canti">
+          <h3> Inferno </h3>
+            <ul>
+              <li> I Canto XII Canto XXIII Canto </li>
+            </ul>
+        </div>
+      </div>
+      <div id="Purgatorio">
+        <div id="PU_Canti">
+          <h3> Purgatorio </h3>
+            <ul>
+              <li> I Canto XII Canto XXIII Canto </li>
+            </ul>
+        </div>
+      </div>
+      <div id="Paradiso">
+        <div id="PA_Canti">
+          <h3> Pradiso </h3>
+            <ul>
+              <li> I Canto XII Canto XXIII Canto </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div id="Icone_Navigazione" class="Redground Icone_Navigazione">
+      <table style="font-size: 26px;">
+    <tr style="border:1px solid black">
+      <td style="border:1px solid black" align="center">
+        <img src="res/Books.png" width="90px" height="90px" id="AccessCanti" title="Canti"/>
+      </td>
+    </tr>
+    <tr style="border:1px solid black">
+      <td style="border:1px solid black" align="center">
+        <img src="res/Search.png" width="90px" height="90px" title="Cerca..."/>
+      </td>
+    </tr>
+    <tr style="border:1px solid black">
+      <td style="border:1px solid black" align="center">
+        <img src="res/Comments.png" width="90px" height="90px" title="Commenti"/>
+      </td>
+    </tr>
+    <tr style="border:1px solid black">
+      <td style="border:1px solid black" align="center">
+        <img src="res/Edit.png" width="90px" height="90px" id="Edit" title="Pagina Creatore"/>
+      </td>
+    </tr>
+    <tr style="border:1px solid black">
+      <td style="border:1px solid black" align="center">
+        <img src="res/Home.png" width="90px" height="90px" id="HomePage" title="Pagina Iniziale"/>
+      </td>
+    </tr>
+    </table>
+    </div>
+    <div id="Slideshow_Navigazione" class="Redground Slideshow_Navigazione">
+      <table>
+        <tr style="border:1px solid black">
+          <td>
+            <!-- Bottone di navigazione << -->
+            <img src="res/LeftArrow.png" width="100px" height="190px"/>
+          </td>
+          <td style="border:1px solid black" align="center">
+            <img src="res/Utente.png" width="300px" height="190px"/>
+          </td>
+          <td style="border:1px solid black" align="center">
+            <img src="res/Utente.png" width="300px" height="190px"/>
+          </td>
+          <td style="border:1px solid black" align="center">
+            <img src="res/Utente.png" width="300px" height="190px"/>
+          </td>
+          <td style="border:1px solid black" align="center">
+            <img src="res/Utente.png" width="300px" height="190px"/>
+          </td>
+          <td style="border:1px solid black" align="center">
+            <img src="res/Utente.png" width="300px" height="190px"/>
+          </td>
+          <td>
+          <!-- Bottone di navigazione >> -->
+            <img src="res/RightArrow.png" width="100px" height="190px"/>
+          </td>
+        </tr>
+      </table>
+      </div>
+  </body>
+</html>
+
+  <script>
+  $("#LoginButton").click(function() {
+  document.getElementById("LoginDiv").className = "LoginDiv";
+  document.getElementById("LoginDiv").display = "block";
+  $('#LoginContent').load("Login.html");
+  });
+  $("#HomePage").click(function() {
+  	window.location.href = "Home.html";
+  });
+  $("#Edit").click(function() {
+  	window.location.href = "EditPage.php";
+  });
+  /*$("div:not(#LoginButton)").click(function() {
+  if ($("div:not(LoginDiv)") || $("div:not(LoginDiv0)"))) {
+    document.getElementById("LoginDiv").className = "LoginDiv0'";
+    document.getElementById("LoginDiv").display = "none";
+    document.getElementById("LoginContent").textContent = '';
+  }
+  });*/
+  </script>

@@ -1,0 +1,102 @@
+body{
+  font-family: "American Typewriter";
+	background-image: url("res/Sfondo.jpg");
+	background-repeat: no-repeat;
+	background-size: 2000px 950px;
+}
+.LoginDiv0 {
+	border: none;
+}
+
+.Redground {
+  background-image: url("res/Redground.PNG");
+  border-radius: 25px;
+  text-shadow: 1.5px 0px;
+}
+
+.Titolo_e_Menu {
+	border: 5px solid black;
+	background-color: #cc0000;
+	font-size: 60px;
+	margin-top: 10px;
+}
+
+.Icone_Navigazione {
+	z-index: 10000;
+}
+
+.LoginDiv {
+			position: absolute;
+			background-color: white;
+			text-align: right;
+			width: 290px;
+			left: 1615px;
+			border: 1px solid black;
+			top: 75px;
+		}
+		.CitazioneIniziale {
+			width: 615px;
+			position: absolute;
+			top: 25%;
+			left: 5px;
+			border: 3px solid black;
+			background-color: #cc0000;
+			font-size: 26px;
+      border-radius: 15px 50px;
+		}
+		.Icone_Navigazione {
+			width: 98px;
+			height: 482px;
+			position: absolute;
+			top: 18%;
+			left: 1810px;
+			border: 3px solid black;
+			background-color: #cc0000;
+			font-size: 26px;
+		}
+		.Slideshow_Navigazione {
+			width: 1740px;
+			height: 198px;
+			position: absolute;
+			top: 75%;
+			left: 4%;
+			border: 3px solid black;
+			background-color: #cc0000;
+			font-size: 26px;
+		}
+
+.LoginButton {
+	height: 70px;
+	Width: 80px;
+}
+
+#Login {
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none;
+    font: bold 10px Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 8px 16px;
+    border: solid 1px #8d0b11;
+    background: #640904;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.CantiList {
+    width: 1200px;
+    height: 400px;
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    border: 3px solid black;
+    background-color: #cc0000;
+    font-size: 20px;
+    background-image: url("res/SfondoIngiallito.jpg");
+    border-radius: 25px;
+}
