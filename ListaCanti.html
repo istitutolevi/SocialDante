@@ -3,6 +3,26 @@
     <title> Lista dei Canti </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
   	<link rel="stylesheet" type="text/css" href="HomeStyle.css"/>
+    <style>
+    .CantiList {
+        width: 600px;
+        height: 450px;
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        border: 3px solid black;
+        background-color: #cc0000;
+        font-size: 20px;
+        background-image: url("res/SfondoIngiallito.jpg");
+        border-radius: 25px;
+        font-family: chaparral pro light;
+    }
+    .Canti_Selector {
+      border: 1px single black;
+      border-collapse: collapse;
+      align: center;
+    }
+    </style>
   </head>
   <body>
     <div id="Titolo_e_Menu" class="Redground Titolo_e_Menu">
@@ -16,31 +36,14 @@
         </div>
       </div>
     </div>
-    <div id="ListaCanti" class="CantiList">
-      <div id="Inferno">
-        <div id="I_Canti">
-          <h3> Inferno </h3>
-            <ul>
-              <li> I Canto XII Canto XXIII Canto </li>
-            </ul>
-        </div>
-      </div>
-      <div id="Purgatorio">
-        <div id="PU_Canti">
-          <h3> Purgatorio </h3>
-            <ul>
-              <li> I Canto XII Canto XXIII Canto </li>
-            </ul>
-        </div>
-      </div>
-      <div id="Paradiso">
-        <div id="PA_Canti">
-          <h3> Pradiso </h3>
-            <ul>
-              <li> I Canto XII Canto XXIII Canto </li>
-            </ul>
-        </div>
-      </div>
+    <div class="CantiList" id="ListaCanti">
+      <table border="1px single black" style="border-collapse: collapse; font-size: 32px; margin-top: 25px;" align="center">
+        <tr>
+          <td > <center id="INF"> <b> Inferno </b> </center> </td> <td> <center id="PUR"> <b> Purgatorio </b> </center> </td> <td> <center id="PAR"> <b> Paradiso </b> </center> </td>
+        </tr>
+      </table>
+       <div id="BoxLoader">
+       </div>
     </div>
     <div id="Icone_Navigazione" class="Redground Icone_Navigazione">
       <table style="font-size: 26px;">
@@ -122,4 +125,20 @@
     document.getElementById("LoginContent").textContent = '';
   }
   });*/
+  $("#INF").click(function() {
+  	$('#BoxLoader').load("Inferno/Canti_Inferno.html");
+    //$(document.body).background-image: url("res/Sfondo.jpg");
+  });
+  $("#PAR").click(function() {
+  	$('#BoxLoader').load("Paradiso/Canti_Paradiso.html");
+    //$(document.body).background-image: url("res/Paradiso_CS1.jpeg");
+  });
+  $("#PUR").click(function() {
+  	$('#BoxLoader').load("Purgatorio/Canti_Purgatorio.html");
+    //$(document.body).background-image: url("res/Sfondo.jpg");
+  });
+  $( document ).ready(function() {
+    $('#BoxLoader').load("Inferno/Canti_Inferno.html");
+
+});
   </script>
